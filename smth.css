@@ -156,8 +156,7 @@
 .container_in_links {
     display: flex;
     flex-direction: row;
-    padding-left: 70px;
-    padding-right: 60px;
+    justify-content: center;
     padding-top: 95px;
     gap: 40px;
 }
@@ -177,3 +176,4 @@
     cursor: pointer;
     text-align: center;
 }
+
