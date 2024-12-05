@@ -132,7 +132,6 @@
 #main_about_2 {
     background-image: url(/icons/photo4.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: contain;
 }
 
@@ -177,6 +176,3 @@
     cursor: pointer;
     text-align: center;
 }
-
-
-
