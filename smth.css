@@ -143,14 +143,14 @@
     padding-left: 60px;
     padding-right: 60px;
     line-height: 26px;
-    padding-bottom: 90px;
+    padding-bottom: 83px;
 }
 
 #links {
-    height: 400px;
+    height: 550px;
     width: 100%;
+    background-image: url(/icons/insta_background.jpg);
     background-color: #9fb1c7;
-    margin-top: 100px;
 }
 
 .container_in_links {
@@ -158,6 +158,7 @@
     flex-direction: row;
     padding-left: 70px;
     padding-right: 60px;
+    padding-top: 95px;
     gap: 40px;
 }
 
@@ -170,7 +171,7 @@
     font-size: 16px;
     text-decoration: none;
     color: white;
-    background: linear-gradient(18deg, #659287, #DEAA79);
+    background: linear-gradient(18deg, #7a847f, #DEAA79);
     border-radius: 30px;
     border: none;
     cursor: pointer;
