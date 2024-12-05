@@ -133,7 +133,7 @@
     background-image: url(/icons/photo4.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
 }
 
 #main_about_2 p {
