@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#body {
+    width: 393px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9fb1c7;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 393px;
+    height: 590px;
+    background-size: cover; /* Зображення заповнює весь екран */
+    background-repeat: no-repeat; /* Не повторювати зображення */
+    background-position: center; /* Центруємо зображення */
+}
+
+.par-img {
+    width: 393px;
+    height: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.layers__header-photo {
+    transform: translate3d(0, calc(var(--scrollTop) / 1.2), 0);
+}
+
+.layers__mountains_top {
+    transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+}
+
+.layers__forest_background {
+    transform: translate3d(0, calc(var(--scrollTop) / 3.5), 0);
+}
+
+.layers__mountains_trees {
+    transform: translate3d(0, calc(var(--scrollTop) / 4.5), 0);
+}
+
+.layers__racoons {
+    transform: translate3d(0, calc(var(--scrollTop) / 10), 0);
+}
+
+.layer {
+    width: 393px;
+    height: 590px;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: #9fb1c7;
+}
+
+
+/* Button Styles */
+#play-music {
+    position: absolute;
+    padding: 15px 30px;
+    font-family: "Dancing Script";
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(18deg, #659287, #DEAA79);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    top: 490px;
+    transition: opacity 2s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth fade-out */
+    opacity: 1; /* Initial opacity */
+}
+
+#play-music:active {
+    transform: scale(0.8);
+}
+
+#about_us {
+    font-size: 18px;
+    color: #0A3981;
+    font-family: 'Kanit';
+    padding-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+.level_in_about {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    gap: 27px;
+    padding-top: 50px;
+}
+
+.text_in_about {
+    height: 90px;
+    width: 170px;
+    font-size: 15px;
+}
+
+.photo_in_about {
+    height: 150px;
+    width: 130px;
+    background-color: black;
+    object-fit: cover;
+}
+
+#main_about_2 {
+    background-image: url(/icons/photo4.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main_about_2 p {
+    font-family: 'Kanit';
+    height: 350px;
+    padding-top: 90px;
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    line-height: 26px;
+    padding-bottom: 83px;
+}
+
+#links {
+    height: 550px;
+    width: 100%;
+    background-image: url(/icons/insta_background.jpg);
+    background-color: #9fb1c7;
+}
+
+.container_in_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 95px;
+    gap: 40px;
+}
+
+.link_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30px;
+    width: 100px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(18deg, #7a847f, #DEAA79);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
