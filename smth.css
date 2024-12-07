@@ -4,7 +4,7 @@
 }
 
 #body {
-    width: 393px;
+    width: 100%                                                                                                                                                         ;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
 .header {
     display: flex;
     justify-content: center;
-    width: 393px;
+    width: 100%;
     height: 590px;
     background-size: cover; /* Зображення заповнює весь екран */
     background-repeat: no-repeat; /* Не повторювати зображення */
@@ -25,7 +25,7 @@
 }
 
 .par-img {
-    width: 393px;
+    width: 100%;
     height: 590px;
     display: flex;
     align-items: center;
@@ -55,10 +55,10 @@
 }
 
 .layer {
-    width: 393px;
+    width: 100%;
     height: 590px;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
@@ -92,6 +92,10 @@
 }
 
 #about_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 18px;
     color: #0A3981;
     font-family: 'Kanit';
@@ -176,4 +180,3 @@
     cursor: pointer;
     text-align: center;
 }
-
