@@ -134,13 +134,16 @@
 }
 
 #main_about_2 {
-    background-image: url(/icons/photo4.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    display: flex;
+    justify-content: center;
 }
 
 #main_about_2 p {
+    background-image: url(/icons/photo4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Kanit';
+    max-width: 354px;
     height: 350px;
     padding-top: 90px;
     color: white;
