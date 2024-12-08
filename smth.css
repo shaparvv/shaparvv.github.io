@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #9fb1c7;
     font-family: Arial, sans-serif;
     position: relative;
@@ -92,19 +93,18 @@
 }
 
 #about_us {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     font-size: 18px;
     color: #0A3981;
     font-family: 'Kanit';
     padding-top: 70px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .main_about {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,6 +114,7 @@
 .level_in_about {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     height: 100%;
     width: 100%;
     gap: 27px;
@@ -133,39 +134,38 @@
     object-fit: cover;
 }
 
-#main_about_2 {
+#about_us2 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-image: url(/icons/photo4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
 }
 
-#main_about_2 p {
-    background-image: url(/icons/photo4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+#about_us2 p {
     font-family: 'Kanit';
-    max-width: 354px;
     height: 350px;
+    width: 69%;
+    max-width: 300px;
     padding-top: 90px;
     color: white;
-    padding-left: 60px;
-    padding-right: 60px;
     line-height: 26px;
     padding-bottom: 83px;
 }
 
 #links {
-    height: 550px;
-    width: 100%;
-    background-image: url(/icons/insta_background.jpg);
-    background-color: #9fb1c7;
-}
-
-.container_in_links {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    padding-top: 95px;
-    gap: 40px;
+    background-image: url(/icons/insta_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 350px;
+    gap: 10%;
+    padding-top: 60px;
 }
 
 .link_button {
