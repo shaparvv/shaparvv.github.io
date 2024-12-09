@@ -209,3 +209,25 @@
         font-size: 20px;
     }
 }
+
+@media (min-width: 700px) {
+    #about_us2 {
+        background-color: #0A3981;
+        background-image: none;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+    #about_us2 p {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 700px) {
+    #about_us2 p {
+        max-width: 35%;
+        font-size: 20px;
+    }
+}
