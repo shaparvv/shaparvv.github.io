@@ -30,7 +30,7 @@
     top: 0;
     left: 0;
     width: 0%;
-    height: 5px; /* Товщина лінії */
+    height: 17px; /* Товщина лінії */
     background: #3498db; /* Колір лінії */
     z-index: 9999;
 }
