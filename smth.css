@@ -25,6 +25,16 @@
     background-position: center; /* Центруємо зображення */
 }
 
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px; /* Товщина лінії */
+    background: #3498db; /* Колір лінії */
+    z-index: 9999;
+}
+
 .par-img {
     width: 100%;
     height: 590px;
