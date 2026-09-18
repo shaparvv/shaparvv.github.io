@@ -13,6 +13,41 @@
     <script defer   src="/smth.js"></script>
     <script defer src="/par-eff.js"></script>
 </head>
+
+<!-- PIN MODAL -->
+
+<div class="pin-modal" id="pinModal">
+
+  <div class="pin-window">
+
+    <button class="close-modal" onclick="closePinModal()">×</button>
+
+    <div class="modal-label">A LITTLE CHALLENGE</div>
+
+    <h2>Enter the secret code</h2>
+
+    <p id="pinHint">
+      Find the clue and enter the PIN below.
+    </p>
+
+    <input
+      type="text"
+      id="pinInput"
+      maxlength="4"
+      placeholder="••••"
+      inputmode="numeric"
+    />
+
+    <button onclick="checkPin()">
+      Unlock →
+    </button>
+
+    <div id="pinMessage"></div>
+
+  </div>
+
+</div>
+
 <body id="body">
     <div class="header">
         <audio id="background-music" src="/icons/Gigi_Perez_Sailor_Song.mp3" loop></audio>
@@ -57,6 +92,149 @@
         <a class="link_button" href="https://www.instagram.com/shaparvv/" target="_blank">Vlad</a>
         <a class="link_button" href="https://www.instagram.com/dashha._/" target="_blank">Dasha</a>
     </div>
+
+<div class="page">
+
+    <!-- gift-->
+
+    <div class="section">
+
+      <div class="label"><b style="font-size: 25px;">A little adventure  for u</b></div>
+
+      <p>Happy Birthday Dashkaaaaaa</p>
+
+      <p>
+        Your gift is waiting for you
+        But first you have to pass a quest<br>
+        You will need to enter PIN codes u gonna look for :>
+      </p>
+
+      <p>The first one u will find in my drawer</p> <!-- What was the year we became a couple? 2024 -->
+
+      <img class="photo_gift" src="photos/photo1.JPG" alt="">
+
+    <button onclick="openPinModal(1)">
+        Start the journey →
+    </button>
+
+    </div>
+
+
+    <!-- seciton 2 locked -->
+
+    <div class="section locked" id="section2">
+      <div class="lock-overlay">
+        <div class="lock-icon">🔒</div>
+        <span>LOCKED</span>
+      </div>
+
+      <h2>Isn`t it the best year in our lives?</h2>
+
+      <p>
+        Every adventure begins
+        with choosing the clothes. Look for the next pin in the wardrobe
+      </p>
+
+      <img class="photo_gift" src="photos/photo2.JPG" alt="">
+
+      <p>
+        Forgot to wish u smth. <br>
+        I WANT YOU TO BE THE HAPPIEST GIRL IN THE WORLD
+      </p> <!-- What was the day and month i made u the first proposal? 18.07 -->
+
+    <button onclick="openPinModal(2)">
+        Choose a t-shirt →
+    </button>
+
+    </div>
+
+
+    <!-- seciton 3 locked -->
+
+    <div class="section locked" id="section3">
+      <div class="lock-overlay">
+        <div class="lock-icon">🔒</div>
+        <span>LOCKED</span>
+      </div>
+
+      <h2>Keep going darliiiing</h2>
+
+      <p>
+        To leave the house you need a key, right? Take a look on the place where they are waiting for yaaa  
+      </p>
+
+      <img class="photo_gift" src="photos/photo3.JPG" alt="">
+
+      <p>
+        May all your dreams come true, even the ones you haven't told anyone about yet
+      </p>
+
+    <button onclick="openPinModal(3)">
+        What`s inside?
+    </button>
+
+    <!-- What was the date we started a new chapter - living together and abroad? 18.09 -->
+
+    </div>
+
+
+    <!-- seciton 4 locked -->
+
+    <div class="section locked" id="section4">
+      <div class="lock-overlay">
+        <div class="lock-icon">🔒</div>
+        <span>LOCKED</span>
+      </div>
+
+      <h2>Almost There</h2>
+
+      <p>
+        Now go and check the mailbox before moving on
+      </p>
+
+      <img class="photo_gift" src="photos/photo4.JPG" alt="">
+
+      <p>
+        May your life always be filled with love, laughter, and magic, and may every new year of your life be better than the last
+      </p> 
+    <button onclick="openPinModal(4)">
+        Did the GLS courier left smth for us? →
+    </button>
+    <!-- Checking if you didn`t forger the date we started our relationship 2602 -->
+
+    </div>
+
+
+    <!-- SECTION 5 -->
+
+    <div class="section locked" id="section5">
+      <div class="lock-overlay">
+        <div class="lock-icon">🔒</div>
+        <span>LOCKED</span>
+      </div>
+
+      <h2>Your Gift Is Near</h2>
+
+      <p>
+        You've followed every step.
+        Now it's time to find
+        what has been waiting for you.
+      </p>
+      
+      <img class="photo_gift" src="photos/photo5.JPG" alt="">
+
+      <p>
+        Happy Birthday, my love. You are the best person i could ever met❤️
+      </p>
+
+    <button onclick="openPinModal(5)">
+        Reveal the surprise →
+    </button>
+    <!-- And when are we starting our trip to AMSTERDAM? 3009 --> 
+
+    </div>
+
+  </div>
 
     <footer></footer>
 </body>
