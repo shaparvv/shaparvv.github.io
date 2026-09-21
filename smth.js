@@ -1,6 +1,5 @@
 console.log(    )
 
-
 const audio = document.getElementById('background-music');
 const button = document.getElementById('play-music');
 
