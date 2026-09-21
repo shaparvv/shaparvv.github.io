@@ -1,24 +1,20 @@
-console.log(    )
-
 const audio = document.getElementById('background-music');
 const button = document.getElementById('play-music');
 
 button.addEventListener('click', () => {
 
+    // Start music directly after user's click
+    audio.play().catch(error => {
+        console.log('Audio playback was blocked:', error);
+    });
+
+    button.style.opacity = '0';
+
     setTimeout(() => {
-
-        audio.play();
-
-        button.style.opacity = '0';
-
-        setTimeout(() => {
-            button.remove();
-        }, 2000);
-
-    }, 1000);
+        button.remove();
+    }, 2000);
 
 });
-
 
 window.onscroll = function() { updateProgressBar(); };
 
