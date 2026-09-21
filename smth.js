@@ -1,3 +1,9 @@
+console.log("SCRIPT LOADED");
+
+function openPinModal(buttonNumber) {
+    console.log("BUTTON CLICKED", buttonNumber);
+}
+
 console.log(    )
 
 const audio = document.getElementById('background-music');
