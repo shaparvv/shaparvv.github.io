@@ -59,39 +59,46 @@ function closePinModal() {
 
 
 /* check pin */
-
 function checkPin() {
+    const enteredPin = pinInput.value.trim();
 
-  const enteredPin = document
-    .getElementById("pinInput")
-    .value
-    .trim();
+    if (enteredPin === pins[currentButton]) {
+        const completedStep = currentButton;
 
-  const message = document.getElementById("pinMessage");
+        pinMessage.className = "pin-success";
+        pinMessage.textContent = "Well done, Dasha. ♥";
 
-  if (enteredPin === pins[currentButton]) {
+        // last pin - play hbDasha
+        if (completedStep === 5) {
+            const backgroundMusic =
+                document.getElementById("background-music");
 
-    message.className = "pin-success";
+            const birthdayMusic =
+                document.getElementById("birthday-music");
 
-    message.textContent = "Well done, Dasha. Keep going. ♥";
+            if (backgroundMusic) {
+                backgroundMusic.pause();
+            }
 
-    setTimeout(() => {
+            birthdayMusic.currentTime = 0;
 
-      closePinModal();
+            birthdayMusic.play().catch(error => {
+                console.error("Music error:", error);
+            });
+        }
 
-      unlockNextSection(currentButton);
+        setTimeout(() => {
+            closePinModal();
 
-    }, 1500);
+            if (completedStep !== 5) {
+                unlockNextSection(completedStep);
+            }
+        }, 1000);
 
-  } else {
-
-    message.className = "pin-error";
-
-    message.textContent =
-      "Are you blind? Enter the correct code. 😭";
-
-  }
-
+    } else {
+        pinMessage.className = "pin-error";
+        pinMessage.textContent = "Wrong code... Try again 😭";
+    }
 }
 
 
