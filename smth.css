@@ -21,9 +21,9 @@
     justify-content: center;
     width: 100%;
     height: 590px;
-    background-size: cover; /* Зображення заповнює весь екран */
-    background-repeat: no-repeat; /* Не повторювати зображення */
-    background-position: center; /* Центруємо зображення */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 
 .progress-bar {
@@ -31,8 +31,8 @@
     top: 0;
     left: 0;
     width: 0%;
-    height: 17px; /* Товщина лінії */
-    background: #3498db; /* Колір лінії */
+    height: 17px; 
+    background: #3498db;
     z-index: 9999;
 }
 
@@ -81,7 +81,6 @@
 }
 
 
-/* Button Styles */
 #play-music {
     position: absolute;
     padding: 15px 30px;
@@ -95,8 +94,8 @@
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     top: 490px;
-    transition: opacity 2s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth fade-out */
-    opacity: 1; /* Initial opacity */
+    transition: opacity 2s cubic-bezier(0.4, 0, 0.2, 1); /* smooth fade-out */
+    opacity: 1; 
 }
 
 #play-music:active {
@@ -286,7 +285,7 @@ button:hover {
     background-color: #35151f;
 }
 
-/* PIN MODAL */
+/* pin modal */
 
 .pin-modal {
   display: none;
@@ -434,23 +433,17 @@ button:hover {
   color: #c94f68;
 }
 
-/* ========================================
-   LOCKED QUEST SECTIONS
-======================================== */
+/* locked quest sectioj */
 
 .section {
   position: relative;
   overflow: hidden;
 }
 
-/* BLURRED STATE */
-
 .section.locked > *:not(.lock-overlay) {
   filter: blur(12px);
   opacity: 0.35;
 }
-
-/* DARK OVERLAY */
 
 .section.locked::before {
   content: "";
@@ -458,8 +451,6 @@ button:hover {
   background: rgba(5, 3, 4, 0.45);
   z-index: 5;
 }   
-
-/* LOCK ICON + TEXT */
 
 .lock-overlay {
   position: absolute;
@@ -488,8 +479,6 @@ button:hover {
   letter-spacing: 4px;
   color: #c9687d;
 }
-
-/* UNLOCK ANIMATION */
 
 .section.unlocked > * {
   filter: none;
