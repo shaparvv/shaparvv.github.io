@@ -49,7 +49,7 @@ function openPinModal(buttonNumber) {
 }
 
 
-/* pin code window open */
+/* pin code window close */
 
 function closePinModal() {
 
@@ -58,7 +58,7 @@ function closePinModal() {
 }
 
 
-/* CHECK PIN */
+/* check pin */
 
 function checkPin() {
 
@@ -124,7 +124,7 @@ function unlockNextSection(step) {
 }
 
 
-/* ENTER KEY */
+/* enter pin */
 
 document.getElementById("pinInput").addEventListener("keydown", function(event) {
 
@@ -135,7 +135,7 @@ document.getElementById("pinInput").addEventListener("keydown", function(event) 
 });
 
 
-/* CLICK OUTSIDE */
+/* click outside */
 
 document.getElementById("pinModal").addEventListener("click", function(event) {
 
