@@ -68,7 +68,7 @@ function checkPin() {
         pinMessage.className = "pin-success";
         pinMessage.textContent = "Well done, Dasha. ♥";
 
-        // last pin - play hbDasha
+        // play music after pin
         if (completedStep === 5) {
             const backgroundMusic =
                 document.getElementById("background-music");
@@ -80,19 +80,18 @@ function checkPin() {
                 backgroundMusic.pause();
             }
 
-            birthdayMusic.currentTime = 0;
-
-            birthdayMusic.play().catch(error => {
-                console.error("Music error:", error);
-            });
+            if (birthdayMusic) {
+                birthdayMusic.currentTime = 0;
+                birthdayMusic.play().catch(console.error);
+            }
         }
 
         setTimeout(() => {
             closePinModal();
 
-            if (completedStep !== 5) {
-                unlockNextSection(completedStep);
-            }
+            // unlock the next section, including section6
+            unlockNextSection(completedStep);
+
         }, 1000);
 
     } else {
@@ -100,7 +99,6 @@ function checkPin() {
         pinMessage.textContent = "Wrong code... Try again 😭";
     }
 }
-
 
 /* next section unlocj */
 
